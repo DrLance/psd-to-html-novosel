@@ -27,38 +27,213 @@
           </ul>
           <input type="button" class="btn" value="Студия">
         </div>
-        <div class="container-room col-md-3">
-          <p>Количество комнат</p>
-          <ul class="list-inline">
-            <li>1</li>
-            <li class="active">2</li>
-            <li>3</li>
-            <li>4+</li>
-          </ul>
-          <input type="button" class="btn w-100" value="Студия">
+        <div class="container-price col-md-3">
+          <p>Стоимость, руб</p>
+          <div class="container-price_range">
+            <input type="text" class="" placeholder="От">
+            <input type="text" class="" placeholder="До">
+          </div>
+          <input type="text" class="button_arrow" placeholder="Регион">
+          <span class="button_arrow"></span>
         </div>
-        <div class="container-room col-md-3">
-          <p>Количество комнат</p>
-          <ul class="list-inline ">
-            <li>1</li>
-            <li class="active">2</li>
-            <li>3</li>
-            <li>4+</li>
-          </ul>
-          <input type="button" class="btn w-100" value="Студия">
+        <div class="container-price col-md-3">
+          <p>Площадь м
+            <sup>2</sup>
+          </p>
+          <div class="container-price_range">
+            <input type="text" class="" placeholder="От">
+            <input type="text" class="" placeholder="До">
+          </div>
+          <input type="text" class="button_arrow" placeholder="Город">
         </div>
-        <div class="container-room col-md-3">
-          <p>Количество комнат</p>
-          <ul class="list-inline ">
-            <li>1</li>
-            <li class="active">2</li>
-            <li>3</li>
-            <li>4+</li>
-          </ul>
-          <input type="button" class="btn w-100" value="Студия">
+        <div class="container-city col-md-3">
+          <input type="text" class="button_arrow" placeholder="Жилой комплекс">
+          <input type="text" class="button_arrow" placeholder="Улица">
         </div>
       </div>
-    </div>
+      <div class="container container-catalog">
+        <div class="col-md-8">
+          <input type="text" placeholder="Поиск по каталогу">
+        </div>
+        <div class="col-md-2">
+          <input type="text" placeholder="Код объекта">
+        </div>
+        <div class="col-md-2">
+          <button class="btn">
+            найти
+          </button>
+        </div>
+      </div>
+      <div class="container container-detail">
+        <div class="row center-block container-detail_type">
+          <div class="col-md-12">
+            <p>Тип недвижимости</p>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Квартиры</span>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Пансионаты</span>
+            </label>
+
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Комнаты</span>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Малосемейки</span>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Общежития</span>
+            </label>
+          </div>
+          <div class="close">
+            <div class="container-detail_close">
+              <span>X</span>
+            </div>
+          </div>
+        </div>
+        <div class="row center-block container-detail_type">
+          <div class="container-price col-xs-2 container-floor">
+            <p>Этажи</p>
+            <div class="container-price_range">
+              <input type="text" class="" placeholder="От">
+              <input type="text" class="" placeholder="До">
+            </div>
+          </div>
+          <div class="container-price col-xs-2 container-floor">
+            <p>Этажность</p>
+            <div class="container-price_range">
+              <input type="text" class="" placeholder="От">
+              <input type="text" class="" placeholder="До">
+            </div>
+          </div>
+          <div class="col-xs-3 container-radio">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Все этажи, кроме первого</span>
+            </label>
+          </div>
+          <div class="col-xs-4 container-radio">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Все этажи, кроме последнего</span>
+            </label>
+          </div>
+        </div>
+        <div class="row center-block container-detail_type">
+          <div class="container-price col-xs-2 container-floor">
+            <p>Площадь м
+              <sup>2</sup>
+            </p>
+            <div class="container-price_range">
+              <input type="text" class="" placeholder="От">
+              <input type="text" class="" placeholder="До">
+            </div>
+          </div>
+          <div class="container-price col-xs-2 container-floor">
+            <p>Площадь кухни м
+              <sup>2</sup>
+            </p>
+            <div class="container-price_range">
+              <input type="text" class="" placeholder="От">
+              <input type="text" class="" placeholder="До">
+            </div>
+          </div>
+        </div>
+        <div class="row center-block container-detail_type">
+          <div class="container-price col-xs-2 container-floor">
+            <input type="text" class="button_arrow" placeholder="Отделка">
+            <span class="button_arrow"></span>
+          </div>
+          <div class="container-price col-xs-2 container-floor">
+            <input type="text" class="button_arrow" placeholder="Окна">
+            <span class="button_arrow"></span>
+          </div>
+          <div class="container-price col-xs-2 container-floor">
+            <p>Площадь кухни м
+              <sup>2</sup>
+            </p>
+            <div class="container-price_range">
+              <input type="text" class="" placeholder="От">
+              <input type="text" class="" placeholder="До">
+            </div>
+          </div>
+        </div>
+        <div class="row center-block container-detail_type_bottom">
+          <div class="col-md-12">
+            <p>Тип недвижимости</p>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Квартиры</span>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Пансионаты</span>
+            </label>
+
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Комнаты</span>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Малосемейки</span>
+            </label>
+          </div>
+        </div>
+        <div class="row center-block container-detail_type_bottom">
+          <div class="col-md-12">
+            <p>Тип недвижимости</p>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Квартиры</span>
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label>
+              <input class="radio" type="radio" name="radio-test">
+              <span class="radio-custom"></span>
+              <span class="label">Пансионаты</span>
+            </label>
+          </div>
+        </div>
+      </div>
   </main>
   <footer>
 

@@ -35,10 +35,20 @@ gulp.task('js', function() {
     .pipe(gulpConnect.reload());
 });
 
+gulp.task('copy-fonts', function() {
+  gulp.src('src/fonts/**').pipe(gulp.dest('public/css/fonts'));
+});
+
+gulp.task('copy-img', function() {
+  gulp.src('src/img/**').pipe(gulp.dest('public/css/img'));
+});
+
 gulp.task('watch', function() {
   gulp.watch([src + '/less/*.less', src + '/less/**/*.less'], ['less']);
   gulp.watch([src + '/js/*.js', src + '/js/**/*.js'], ['js']);
+  gulp.watch([src + '/fonts/*.*'], ['copy-fonts']);
+  gulp.watch([src + '/img/*.*'], ['copy-img']);
   return gulp.watch([src + '/*.html', src + '/html/**/*.html'], ['html']);
 });
 
-gulp.task('default', ['connect', 'less', 'watch', 'html', 'js']);
+gulp.task('default', ['connect', 'less', 'watch', 'html', 'js', 'copy-fonts', 'copy-img']);
