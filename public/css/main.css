@@ -1,0 +1,44 @@
+main .container h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+main .container-search {
+  min-height: 180px;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+}
+main .container-search .container-room {
+  font-size: 14px;
+}
+main .container-search .container-room p {
+  font-weight: 600;
+}
+main .container-search .container-room .active {
+  background-color: #81ba27;
+  color: #fff;
+}
+main .container-search .container-room .btn {
+  width: 81%;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: #81ba27;
+  border: 1px #81ba27 solid;
+  font-weight: 600;
+}
+main .container-search .container-room ul {
+  margin-left: 0px;
+  display: flex;
+}
+main .container-search .container-room li {
+  width: 40px;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 5px;
+  border-color: #81ba27;
+  border: 1px #81ba27 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
