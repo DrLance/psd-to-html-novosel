@@ -11,237 +11,490 @@
 
 <body>
   <header>
-    <div></div>
-  </header>
-  <main>
-    <div class="container">
-      <h2>Квартиры</h2>
-      <div class="container container-search">
-        <div class="container-room col-md-3">
-          <p>Количество комнат</p>
-          <ul class="list-inline">
-            <li>1</li>
-            <li class="active">2</li>
-            <li>3</li>
-            <li>4+</li>
-          </ul>
-          <input type="button" class="btn" value="Студия">
-        </div>
-        <div class="container-price col-md-3">
-          <p>Стоимость, руб</p>
-          <div class="container-price_range">
-            <input type="text" class="" placeholder="От">
-            <input type="text" class="" placeholder="До">
+    <div id="header" class="block-radius">
+      <div class="block-background bgr-2 block-radius" data-exclude-top="true" data-bgr-x="70%" data-pos-from="-10" data-pos-to="10"></div>
+      <div class="block-background bgr-1 block-radius bgr-stretch parallax"></div>
+      <div class="container">
+        <div id="header-top" class="clearfix">
+          <a href="/" class="logo hidden-xs hidden-sm"></a>
+          <div id="header-top-main">
+            <div id="main-nav">
+              <a href="/" class="logo visible-xs visible-sm"></a>
+              <a href="javascript:void(0);" data-target="#main-nav-container" data-toggle="collapse" class="collapsed nav-toggle visible-xs visible-sm">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              <div id="main-nav-container" class="navbar-collapse clearfix collapse">
+                <ul>
+                  <li class='%CLASS%'>
+                    <a href='%LINK%' target='%TARGET%' title='%TITLE%'>заголовок</a>
+                  </li>
+                  <li class='active'>
+                    <a href='%LINK%' target='%TARGET%' title='%TITLE%'>%CAPTION%</a>
+                  </li>
+                  <li>
+                    <a href='%LINK%' target='%TARGET%' title='%TITLE%'>%CAPTION%</a>
+                  </li>
+                  <li class='active'>
+                    <a href='%LINK%' target='%TARGET%' title='%TITLE%'>%CAPTION%</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- #main-nav-container -->
+            </div>
+            <!-- #main-nav -->
+            <div id="main-nav-instead"></div>
+            <div id="header-phones">
+              <div itemscope itemtype="http://schema.org/Organization">
+                <a href="tel:+79627347373">
+                  <span itemprop="telephone" class="nowrap">+7 962 734-73-73</span>
+                </a>,
+                <a href="tel:73842447373">
+                  <span itemprop="telephone" class="nowrap">+7 (3842) 44-73-73</span>
+                </a>
+              </div>
+            </div>
+            <!-- #header-phones -->
+            <div id="header-drembis">Каждый клиент — VIP клиент!</div>
           </div>
-          <input type="text" class="button_arrow" placeholder="Регион">
-          <span class="button_arrow"></span>
-        </div>
-        <div class="container-price col-md-3">
-          <p>Площадь м
-            <sup>2</sup>
-          </p>
-          <div class="container-price_range">
-            <input type="text" class="" placeholder="От">
-            <input type="text" class="" placeholder="До">
+          <!-- #header-top-main -->
+          <div id="header-top-links">
+            <div id="header-social">
+              <div class="nav-social">
+                <ul>
+                  <li>
+                    <a href="https://vk.com/novoselvip" class="link-social vk" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="link-social facebook" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/novosel.vip/" class="link-social instagram" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="link-social twitter" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="https://ok.ru/profile/570796528757" class="link-social ok" target="_blank"></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- .nav-social -->
+            </div>
+            <!-- #header-social -->
+            <a href="/feedback/1<?=$stmob?>" class="btn-orange header-write-us">Напишите нам</a>
           </div>
-          <input type="text" class="button_arrow" placeholder="Город">
+          <!-- #header-top-links -->
         </div>
-        <div class="container-city col-md-3">
-          <input type="text" class="button_arrow" placeholder="Жилой комплекс">
-          <input type="text" class="button_arrow" placeholder="Улица">
-        </div>
-      </div>
-      <div class="container container-catalog">
-        <div class="col-md-8">
-          <input type="text" placeholder="Поиск по каталогу">
-        </div>
-        <div class="col-md-2">
-          <input type="text" placeholder="Код объекта">
-        </div>
-        <div class="col-md-2">
-          <button class="btn">
-            найти
-          </button>
-        </div>
-      </div>
-      <div class="container container-detail">
-        <div class="row center-block container-detail_type">
-          <div class="col-md-12">
-            <p>Тип недвижимости</p>
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Квартиры</span>
-            </label>
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Пансионаты</span>
-            </label>
+        <!-- #header-top -->
+        <div id="header-bottom">
+          <div class="row">
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3">
+              <div class="hb-item-in">
+                <a href="/pokupatelyu.html<?=$stmob?>" class="hb-link red">
+                  <span class="hb-link-icon i1"></span>
+                  <span class="hb-link-text">покупателю</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
 
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Комнаты</span>
-            </label>
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Малосемейки</span>
-            </label>
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Общежития</span>
-            </label>
-          </div>
-          <div class="close">
-            <div class="container-detail_close">
-              <span>X</span>
+            <div class="hideb hb-item col-xs-6 col-sm-4 col-md-3 visible-xs visible-sm">
+              <div class="hb-item-in">
+                <a href="/prodavcu.html<?=$stmob?>" class="hb-link red">
+                  <span class="hb-link-icon i2"></span>
+                  <span class="hb-link-text">Продавцу</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
             </div>
+            <!-- .hb-item -->
+
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3">
+              <div class="hb-item-in">
+                <a href="/nedvizhimost.html<?=$stmob?>" class="hb-link green">
+                  <span class="hb-link-icon i3"></span>
+                  <span class="hb-link-text">квартиры</span>
+                </a>
+
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3">
+              <div class="hb-item-in">
+                <a href="/nedvizhimost.html#!?action=search&agent=&region%5B%5D=%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C&area_from=NaN&area_to=NaN&rooms=&price_from=&price_to=&deal%5B%5D=4"
+                  class="hb-link green">
+                  <span class="hb-link-icon i5"></span>
+                  <span class="hb-link-text">для бизнеса</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3">
+              <div class="hb-item-in">
+                <a href="/nedvizhimost.html#!?action=search&agent=&region%5B%5D=%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C&area_from=NaN&area_to=NaN&rooms=&price_from=&price_to=&deal%5B%5D=5"
+                  class="hb-link green">
+                  <span class="hb-link-icon i7"></span>
+                  <span class="hb-link-text">Дома, коттеджи</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3 hidden-xs hidden-sm">
+              <div class="hb-item-in">
+                <a href="/prodavcu.html<?=stmob?>" class="hb-link red">
+                  <span class="hb-link-icon i2"></span>
+                  <span class="hb-link-text">Продавцу</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3">
+              <div class="hb-item-in">
+                <a href="/nedvizhimost.html<?=$stmob?>" class="hb-link green">
+                  <span class="hb-link-icon i4"></span>
+                  <span class="hb-link-text">новостройки</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-0" id="gomob">
+              <div class="hb-item-in">
+                <a href="/ipoteka.html<?=$stmob?>" class="hb-link green">
+                  <span class="hb-link-icon i6"></span>
+                  <span class="hb-link-text">ипотека</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
+            <div class="hb-item col-xs-6 col-sm-4 col-md-3">
+              <div class="hb-item-in">
+                <a href="/nedvizhimost.html#!?action=search&agent=&region%5B%5D=%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C&area_from=NaN&area_to=NaN&rooms=&price_from=&price_to=&deal%5B%5D=5"
+                  class="hb-link green">
+                  <span class="hb-link-icon i8"></span>
+                  <span class="hb-link-text">дачи, земля</span>
+                </a>
+              </div>
+              <!-- .hb-item-in -->
+            </div>
+            <!-- .hb-item -->
           </div>
+          <!-- .row -->
         </div>
-        <div class="row center-block container-detail_type">
-          <div class="container-price col-xs-2 container-floor">
-            <p>Этажи</p>
-            <div class="container-price_range">
-              <input type="text" class="" placeholder="От">
-              <input type="text" class="" placeholder="До">
+        <!-- #header-bottom -->
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- #header -->
+  </header>
+  <main class="block-radius">
+    <div class="container-fluid">
+      <div class="container">
+        <h2>Квартиры</h2>
+        <div class=" container container-search ">
+          <div class="container-room col-md-3 ">
+            <p>Количество комнат</p>
+            <ul class="list-inline ">
+              <li>1</li>
+              <li class="active ">2</li>
+              <li>3</li>
+              <li>4+</li>
+            </ul>
+            <input type="button " class="btn " value="Студия ">
+          </div>
+          <div class="container-price col-md-3 ">
+            <p>Стоимость, руб</p>
+            <div class="container-price_range ">
+              <input type="text " class=" " placeholder="От ">
+              <input type="text " class=" " placeholder="До ">
             </div>
+            <input type="text " class="button_arrow " placeholder="Регион ">
+            <span class="button_arrow "></span>
           </div>
-          <div class="container-price col-xs-2 container-floor">
-            <p>Этажность</p>
-            <div class="container-price_range">
-              <input type="text" class="" placeholder="От">
-              <input type="text" class="" placeholder="До">
-            </div>
-          </div>
-          <div class="col-xs-3 container-radio">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Все этажи, кроме первого</span>
-            </label>
-          </div>
-          <div class="col-xs-4 container-radio">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Все этажи, кроме последнего</span>
-            </label>
-          </div>
-        </div>
-        <div class="row center-block container-detail_type">
-          <div class="container-price col-xs-2 container-floor">
+          <div class="container-price col-md-3 ">
             <p>Площадь м
               <sup>2</sup>
             </p>
-            <div class="container-price_range">
-              <input type="text" class="" placeholder="От">
-              <input type="text" class="" placeholder="До">
+            <div class="container-price_range ">
+              <input type="text" placeholder="От ">
+              <input type="text" placeholder="До ">
+            </div>
+            <input type="text " class="button_arrow " placeholder="Город ">
+          </div>
+          <div class="container-city col-md-3 ">
+            <input type="text " class="button_arrow " placeholder="Жилой комплекс ">
+            <input type="text " class="button_arrow " placeholder="Улица ">
+          </div>
+        </div>
+        <div class="container container-catalog ">
+          <div class="col-md-8 ">
+            <input type="text " placeholder="Поиск по каталогу ">
+          </div>
+          <div class="col-md-2 ">
+            <input type="text " placeholder="Код объекта ">
+          </div>
+          <div class="col-md-2 ">
+            <button class="btn ">
+              найти
+            </button>
+          </div>
+        </div>
+        <div id="detail_info" class="container container-detail">
+          <div class="row center-block container-detail_type ">
+            <div class="col-md-12 ">
+              <p>Тип недвижимости</p>
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Квартиры</span>
+              </label>
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Пансионаты</span>
+              </label>
+
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Комнаты</span>
+              </label>
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Малосемейки</span>
+              </label>
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Общежития</span>
+              </label>
+            </div>
+            <div class="close ">
+              <div class="container-detail_close ">
+                <span>X</span>
+              </div>
             </div>
           </div>
-          <div class="container-price col-xs-2 container-floor">
-            <p>Площадь кухни м
-              <sup>2</sup>
-            </p>
-            <div class="container-price_range">
-              <input type="text" class="" placeholder="От">
-              <input type="text" class="" placeholder="До">
+          <div class="row center-block container-detail_type ">
+            <div class="container-price col-xs-2 container-floor ">
+              <p>Этажи</p>
+              <div class="container-price_range ">
+                <input type="text" placeholder="От ">
+                <input type="text" placeholder="До ">
+              </div>
+            </div>
+            <div class="container-price col-xs-2 container-floor ">
+              <p>Этажность</p>
+              <div class="container-price_range ">
+                <input type="text" placeholder="От ">
+                <input type="text" placeholder="До ">
+              </div>
+            </div>
+            <div class="col-xs-3 container-radio ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Все этажи, кроме первого</span>
+              </label>
+            </div>
+            <div class="col-xs-4 container-radio ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Все этажи, кроме последнего</span>
+              </label>
+            </div>
+          </div>
+          <div class="row center-block container-detail_type ">
+            <div class="container-price col-xs-2 container-floor ">
+              <p>Площадь м
+                <sup>2</sup>
+              </p>
+              <div class="container-price_range ">
+                <input type="text " class=" " placeholder="От ">
+                <input type="text " class=" " placeholder="До ">
+              </div>
+            </div>
+            <div class="container-price col-xs-2 container-floor ">
+              <p>Площадь кухни м
+                <sup>2</sup>
+              </p>
+              <div class="container-price_range ">
+                <input type="text " class=" " placeholder="От ">
+                <input type="text " class=" " placeholder="До ">
+              </div>
+            </div>
+          </div>
+          <div class="row center-block container-detail_type ">
+            <div class="container-price col-xs-2 container-floor ">
+              <input type="text " class="button_arrow " placeholder="Отделка ">
+              <span class="button_arrow "></span>
+            </div>
+            <div class="container-price col-xs-2 container-floor ">
+              <input type="text " class="button_arrow " placeholder="Окна ">
+              <span class="button_arrow "></span>
+            </div>
+            <div class="container-price col-xs-2 container-floor ">
+              <p>Площадь кухни м
+                <sup>2</sup>
+              </p>
+              <div class="container-price_range ">
+                <input type="text " class=" " placeholder="От ">
+                <input type="text " class=" " placeholder="До ">
+              </div>
+            </div>
+          </div>
+          <div class="row center-block container-detail_type_bottom ">
+            <div class="col-md-12 ">
+              <p>Материал стен</p>
+            </div>
+            <div class="col-md-3 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Монолитно-каркасный</span>
+              </label>
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Панельный</span>
+              </label>
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Кирпичный</span>
+              </label>
+            </div>
+            <div class="col-md-4 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Железобетонный</span>
+              </label>
+            </div>
+          </div>
+          <div class="row center-block container-detail_type_bottom ">
+            <div class="col-md-12 ">
+              <p>Интересные предложения</p>
+            </div>
+            <div class="col-md-3 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Цена со скидкой</span>
+              </label>
+            </div>
+            <div class="col-md-2 ">
+              <label>
+                <input class="radio " type="radio " name="radio-test ">
+                <span class="radio-custom "></span>
+                <span class="label ">Обмен</span>
+              </label>
             </div>
           </div>
         </div>
-        <div class="row center-block container-detail_type">
-          <div class="container-price col-xs-2 container-floor">
-            <input type="text" class="button_arrow" placeholder="Отделка">
-            <span class="button_arrow"></span>
-          </div>
-          <div class="container-price col-xs-2 container-floor">
-            <input type="text" class="button_arrow" placeholder="Окна">
-            <span class="button_arrow"></span>
-          </div>
-          <div class="container-price col-xs-2 container-floor">
-            <p>Площадь кухни м
-              <sup>2</sup>
-            </p>
-            <div class="container-price_range">
-              <input type="text" class="" placeholder="От">
-              <input type="text" class="" placeholder="До">
+        <div class="container summary ">
+          <div class="row ">
+            <div class="col-xs-7 ">
+              <p class="text-left ">Подобрано:
+                <span>567 квартир</span>
+              </p>
+            </div>
+            <div class="col-xs-5 ">
+              <p class="text-right ">
+                <a id="show_details" href="# ">Расширенный поиск</a>
+              </p>
             </div>
           </div>
         </div>
-        <div class="row center-block container-detail_type_bottom">
-          <div class="col-md-12">
-            <p>Материал стен</p>
-          </div>
-          <div class="col-md-3">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Монолитно-каркасный</span>
-            </label>
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Панельный</span>
-            </label>
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Кирпичный</span>
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Железобетонный</span>
-            </label>
-          </div>
-        </div>
-        <div class="row center-block container-detail_type_bottom">
-          <div class="col-md-12">
-            <p>Интересные предложения</p>
-          </div>
-          <div class="col-md-3">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Цена со скидкой</span>
-            </label>
-          </div>
-          <div class="col-md-2">
-            <label>
-              <input class="radio" type="radio" name="radio-test">
-              <span class="radio-custom"></span>
-              <span class="label">Обмен</span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="summary">
-        <p>Подобрано:
-          <span>567 квартир</span>
-        </p>
       </div>
     </div>
+    <!-- block call me -->
+    <div class="row block_call">
+      <div class="container">
+        <div class="col-xs-12 col-sm-6 ">
+          <h4 class="text-bold ">Не хочу искать, перезвоните мне! Заполните заявку и мы свяжемся</h4>
+          <h5 class=" ">Не хочу искать, перезвоните мне! Заполните заявку и мы свяжемся</h5>
+        </div>
+        <div class="col-xs-12 col-sm-6 ">
+          <div class="block_contact-form ">
+            <form>
+              <div>
+                <input name="telNo" type="tel" placeholder="Введите ваш телефона" required=" ">
+                <input type="submit" value="Название кнопки ">
+              </div>
+            </form>
+            <p>Oтпpaвляя зaявкy, вы coглaшaeтecь нa oбpaбoткy
+              <span>пepcoнaльныx дaнных</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- block  athers room -->
   </main>
   <footer>
+    <div id="footer" class="container-fliud">
+      <div class="row center-block container clearfix">
+        <div class="col-xs-12">
+          <div id="copyright" class="col-md-2">
+            © 2009 ―
+            <br />Все права защищены
+          </div>
+          <!-- #copyright -->
+          <div id="footer-social" class="col-xs-4">
+            <div class="nav-social ">
+              <ul>
+                <li>
+                  <a href="https://vk.com/novoselvip " class="link-social vk " target="_blank "></a>
+                </li>
+                <li>
+                  <a href="# " class="link-social facebook " target="_blank "></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/novosel.vip/ " class="link-social instagram " target="_blank "></a>
+                </li>
+                <li>
+                  <a href="# " class="link-social twitter " target="_blank "></a>
+                </li>
+                <li>
+                  <a href="https://ok.ru/profile/570796528757 " class="link-social ok " target="_blank "></a>
+                </li>
+              </ul>
+            </div>
+            <!-- .nav-social -->
+          </div>
+          <!-- #footer-social -->
 
+          <a href="http://artalt.ru " title="создание сайта в Кемерово, разработка сайтов, продвижение сайта Кемерово
+        " target="_blank " class="link-artalt">Создание сайта</a>
+        </div>
+      </div>
+      <!-- .container -->
+    </div>
   </footer>
 
   <script src="./vendor/jquery/jquery.min.js"></script>

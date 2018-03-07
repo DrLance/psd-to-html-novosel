@@ -1,3 +1,7 @@
+@import 'slick.css';
+@import 'slick-theme.css';
+@import 'main_novosel.css';
+@import 'style.css';
 @font-face {
   font-family: 'LatoWebBold';
   src: url('fonts/Lato-Bold.eot');
@@ -23,8 +27,13 @@
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
-main input[placeholder] {
-  padding-left: 20px;
+.margin-top_25 {
+  margin-top: 25px;
+}
+main {
+  margin-bottom: -70px;
+  position: relative;
+  background-image: url(../images/clipart/bgr-subpage.jpg);
 }
 main button {
   border-radius: 5px;
@@ -33,6 +42,12 @@ main button {
   height: 40px;
   text-transform: uppercase;
   color: white;
+}
+main input[placeholder] {
+  padding-left: 20px;
+}
+main .block_form-calc a {
+  text-decoration: none;
 }
 main .checkbox,
 main .radio {
@@ -75,6 +90,10 @@ main .button_arrow {
   background-repeat: no-repeat;
   background-position: 95% 50%;
 }
+main .block_form-calc .container-detail_type p {
+  font-family: 'HelveticaNeueCyr B';
+  font-size: 12px;
+}
 main .container h2 {
   text-transform: uppercase;
   font-weight: 600;
@@ -82,10 +101,24 @@ main .container h2 {
 }
 main .container .summary {
   margin-top: 20px;
+  margin-bottom: 55px;
+  padding: 0;
 }
 main .container .summary p {
   font-size: 18px;
   font-family: 'HelveticaNeueCyr B';
+}
+main .container .summary p a {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-transform: uppercase;
+  color: black;
+}
+main .container .summary p a:link {
+  color: none;
+}
+main .container .summary p a:visited {
+  color: none;
 }
 main .container-price input {
   border-radius: 5px;
@@ -112,6 +145,10 @@ main .container-price .container-price_range :nth-child(2) {
   border-radius: 0 5px 5px 0;
   margin-left: -5px;
   border-left: none;
+}
+main .container-price .container-price_range input:focus {
+  font-weight: 600;
+  border-width: 2px;
 }
 main .container-search {
   min-height: 180px;
@@ -166,9 +203,13 @@ main .container-search .container-city input {
   height: 40px;
   margin-top: 24px;
 }
+main .container-search .container-city input:focus {
+  font-weight: 600;
+  border-width: 2px;
+}
 main .container-catalog {
   margin-top: 10px;
-  min-height: 90;
+  min-height: 90px;
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
@@ -182,6 +223,10 @@ main .container-catalog input {
   border: 1px #81ba27 solid;
   width: 100%;
   height: 40px;
+}
+main .container-catalog input:focus {
+  font-weight: 600;
+  border-width: 2px;
 }
 main .container-detail {
   margin-top: 10px;

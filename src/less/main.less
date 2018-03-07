@@ -1,3 +1,7 @@
+@import 'slick.css';
+@import 'slick-theme.css';
+@import 'main_novosel.css';
+@import 'style.css';
 @gray: #f6f6f6;
 @green-border: #81ba27;
 @font-face {
@@ -34,10 +38,14 @@
   text-rendering: optimizeLegibility;
 }
 
+.margin-top_25 {
+  margin-top: 25px;
+}
+
 main {
-  input[placeholder] {
-    padding-left: 20px;
-  }
+  margin-bottom: -70px;
+  position: relative;
+  background-image: url(../images/clipart/bgr-subpage.jpg);
   button {
     border-radius: 5px;
     background-color: #e86c20;
@@ -45,6 +53,14 @@ main {
     height: 40px;
     text-transform: uppercase;
     color: white;
+  }
+  input[placeholder] {
+    padding-left: 20px;
+  }
+  .block_form-calc {
+    a {
+      text-decoration: none;
+    }
   }
   .checkbox,
   .radio {
@@ -87,6 +103,14 @@ main {
     background-repeat: no-repeat;
     background-position: 95% 50%;
   }
+  .block_form-calc {
+    .container-detail_type {
+      p {
+        font-family: 'HelveticaNeueCyr B';
+        font-size: 12px;
+      }
+    }
+  }
   .container {
     h2 {
       text-transform: uppercase;
@@ -95,9 +119,23 @@ main {
     }
     .summary {
       margin-top: 20px;
+      margin-bottom: 55px;
+      padding: 0;
       p {
         font-size: 18px;
-        font-family: 'HelveticaNeueCyr B'
+        font-family: 'HelveticaNeueCyr B';
+        a {
+          text-decoration: underline;
+          text-decoration-style: dashed;
+          text-transform: uppercase;
+          color: black;
+          &:link {
+            color: none;
+          }
+          &:visited {
+            color: none;
+          }
+        }
       }
     }
   }
@@ -126,6 +164,10 @@ main {
         border-radius: 0 5px 5px 0;
         margin-left: -5px;
         border-left: none;
+      }
+      input:focus {
+        font-weight: 600;
+        border-width: 2px;
       }
     }
   }
@@ -182,11 +224,15 @@ main {
         height: 40px;
         margin-top: 24px;
       }
+      input:focus {
+        font-weight: 600;
+        border-width: 2px;
+      }
     }
   }
   .container-catalog {
     margin-top: 10px;
-    min-height: 90;
+    min-height: 90px;
     background-color: @gray;
     display: flex;
     align-items: center;
@@ -199,6 +245,10 @@ main {
       border: 1px @green-border solid;
       width: 100%;
       height: 40px;
+    }
+    input:focus {
+      font-weight: 600;
+      border-width: 2px;
     }
   }
   .container-detail {
