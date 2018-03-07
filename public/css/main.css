@@ -80,6 +80,13 @@ main .container h2 {
   font-weight: 600;
   font-family: 'LatoWebBold';
 }
+main .container .summary {
+  margin-top: 20px;
+}
+main .container .summary p {
+  font-size: 18px;
+  font-family: 'HelveticaNeueCyr B';
+}
 main .container-price input {
   border-radius: 5px;
   background-color: transparent;
@@ -87,6 +94,7 @@ main .container-price input {
   border: 1px #81ba27 solid;
   width: 100%;
   height: 40px;
+  color: black;
 }
 main .container-price input:focus {
   font-weight: 600;
@@ -104,10 +112,6 @@ main .container-price .container-price_range :nth-child(2) {
   border-radius: 0 5px 5px 0;
   margin-left: -5px;
   border-left: none;
-}
-main input:focus {
-  font-weight: 600;
-  border-width: 2px;
 }
 main .container-search {
   min-height: 180px;
