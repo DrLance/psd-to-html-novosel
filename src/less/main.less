@@ -1,3 +1,4 @@
+@import "fontawesome-all.min.css";
 @import 'slick.css';
 @import 'slick-theme.css';
 @import 'main_novosel.css';
@@ -46,6 +47,9 @@ main {
   margin-bottom: -70px;
   position: relative;
   background-image: url(../images/clipart/bgr-subpage.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
   button {
     border-radius: 5px;
     background-color: #e86c20;
@@ -289,6 +293,47 @@ main {
       p {
         font-size: 14px;
       }
+    }
+  }
+  .container h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .block-map_image {
+    background-image: url('./img/map.png');
+    min-height: 850px;
+  }
+  .block_result-absolute {
+    position: absolute;
+    top: 140px;
+    left: 135px;
+  }
+  .container-city_map {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    p {
+      align-self: center;
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }
+    .last-child {
+      margin-left: 40px;
+    }
+    input {
+      border-radius: 5px;
+      background-color: transparent;
+      border-color: @green-border;
+      border: 1px @green-border solid;
+      width: 100%;
+      height: 40px;
+    }
+    input:focus {
+      font-weight: 600;
+      border-width: 2px;
     }
   }
 }
